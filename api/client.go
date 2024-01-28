@@ -41,7 +41,7 @@ func checkError(resp *http.Response, body []byte) error {
 }
 
 func ClientFromEnvironment() (*Client, error) {
-	defaultPort := "11434"
+	defaultPort := "8000"
 
 	scheme, hostport, ok := strings.Cut(os.Getenv("OLLAMA_HOST"), "://")
 	switch {
